@@ -62,17 +62,29 @@ public class SimpleOperationsService implements OperationsService {
     public CriminalCase createCriminalCase(CaseType caseType, String shortDescription, String badgeNo, Map<Evidence, String> evidenceMap) {
         // get detective
         // TODO 1. retrieve detective  (according to diagram 2.5)
+        Optional<Detective> detective = detectiveRepo.findByBadgeNumber(badgeNo);
 
         // create a criminal case instance
         CriminalCase criminalCase = new CriminalCase();
         // TODO 2. set fields; use ifPresent(..) to set(or not) the leadDetective field
+        detective.ifPresent(criminalCase::setLeadInvestigator);
+        criminalCase.setType(caseType);
+        criminalCase.setShortDescription(shortDescription);
 
-        evidenceMap.forEach((ev, storageName) -> {
+        evidenceMap.forEach((Evidence ev, String storageName) -> {
             // TODO 3. retrieve storage, throw ServiceException if not found
+            Optional<Storage> storageOptional = storageRepo.findByName(storageName);
+            if (storageOptional.isEmpty()) {
+                throw new ServiceException(storageName + "is not found");
+            }
             // TODO 4. if storage is found, link it to the evidence and add evidence to the case
+            ev.setStorage(storageOptional.get());
+            criminalCase.addEvidence(ev);
+            evidenceRepo.save(ev);
         });
 
         // TODO 5. save the criminal case instance
+        criminalCaseRepo.save(criminalCase);
         return criminalCase;
     }
 

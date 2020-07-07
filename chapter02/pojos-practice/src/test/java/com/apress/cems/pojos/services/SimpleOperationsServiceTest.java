@@ -65,7 +65,7 @@ public class SimpleOperationsServiceTest extends SimpleServiceTestBase {
         assertNotNull(detective);
         detective.setBadgeNumber(BADGE_NO);
         assertEquals(DETECTIVE_ID, detective.getId());
-        detective.setBadgeNumber(BADGE_NO);
+        //detective.setBadgeNumber(BADGE_NO);
 
         // create storage entries
         var storage = new Storage();
@@ -83,7 +83,7 @@ public class SimpleOperationsServiceTest extends SimpleServiceTestBase {
 
     @DisplayName("Pojo Exercise Practice")
     @Test
-    void testCreateCasePractice(){
+    void testCreateCasePractice() {
         Map<Evidence, String> evidenceLocationMap = new HashMap<>();
         var ev = new Evidence();
         ev.setItemName("drugs");
