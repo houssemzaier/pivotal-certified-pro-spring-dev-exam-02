@@ -21,4 +21,5 @@ module com.apress.cems.dj.practice {
     requires spring.orm;
     requires java.persistence;
     requires spring.data.commons;
+    requires kotlin.stdlib;
 }

@@ -21,4 +21,5 @@ module com.apress.cems.hib.practice {
     requires spring.jdbc;
     requires spring.tx;
     requires spring.orm;
+    requires kotlin.stdlib;
 }

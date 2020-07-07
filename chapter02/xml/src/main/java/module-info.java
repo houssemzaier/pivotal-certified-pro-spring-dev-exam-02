@@ -8,4 +8,5 @@ module com.apress.cems.xml {
     requires org.apache.commons.lang3;
     requires java.sql;
     requires org.slf4j;
+    requires kotlin.stdlib;
 }

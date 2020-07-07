@@ -22,6 +22,7 @@ module com.apress.cems.sec.dj {
     requires java.persistence;
     requires spring.data.commons;
     requires spring.security.core;
+    requires kotlin.stdlib;
 
     exports com.apress.cems.dj;
     exports com.apress.cems.dj.repos;

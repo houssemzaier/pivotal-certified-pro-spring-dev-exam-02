@@ -24,6 +24,7 @@ module com.apress.cems.web.thymeleaf {
     requires thymeleaf.spring5;
     requires thymeleaf;
     requires java.validation;
+    requires kotlin.stdlib;
 
     exports com.apress.cems.web.config;
     exports com.apress.cems.web.controllers;

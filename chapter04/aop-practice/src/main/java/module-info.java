@@ -13,4 +13,5 @@ module com.apress.cems.aop.practice {
     requires spring.core;
     requires org.aspectj.weaver;
     requires org.slf4j;
+    requires kotlin.stdlib;
 }

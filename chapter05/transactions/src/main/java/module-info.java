@@ -16,4 +16,5 @@ module com.apress.cems.tx {
     requires spring.tx;
     requires java.naming;
     requires java.annotation;
+    requires kotlin.stdlib;
 }

@@ -11,4 +11,5 @@ module com.apress.cems.three.base {
     requires spring.beans;
     requires spring.core;
     requires java.annotation;
+    requires kotlin.stdlib;
 }

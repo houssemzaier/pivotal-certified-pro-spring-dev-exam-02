@@ -22,4 +22,5 @@ module com.apress.cems.emf.practice {
     requires spring.tx;
     requires spring.orm;
     requires java.persistence;
+    requires kotlin.stdlib;
 }

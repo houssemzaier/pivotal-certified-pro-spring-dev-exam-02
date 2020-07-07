@@ -94,7 +94,5 @@ public class SimpleOperationsServiceTest extends SimpleServiceTestBase {
 
         assertNotNull(criminalCase);
         assertNotNull(criminalCase.getLeadInvestigator());
-
     }
-
 }

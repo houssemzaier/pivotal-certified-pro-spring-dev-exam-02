@@ -14,4 +14,5 @@ module com.apress.cems.jdbc {
     requires spring.jdbc;
     requires java.naming;
     requires java.annotation;
+    requires kotlin.stdlib;
 }

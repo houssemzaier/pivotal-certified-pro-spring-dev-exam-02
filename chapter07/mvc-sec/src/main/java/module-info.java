@@ -24,6 +24,7 @@ module com.apress.cems.sec {
     requires spring.security.core;
     requires spring.security.web;
     requires spring.security.config;
+    requires kotlin.stdlib;
 
     exports com.apress.cems.sec.config;
     exports com.apress.cems.sec.controllers;

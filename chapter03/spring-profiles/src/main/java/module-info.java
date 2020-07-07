@@ -13,4 +13,5 @@ module com.apress.cems.spring.tests.jupiter {
     requires spring.jdbc;
     requires java.naming;
     requires ojdbc8;
+    requires kotlin.stdlib;
 }

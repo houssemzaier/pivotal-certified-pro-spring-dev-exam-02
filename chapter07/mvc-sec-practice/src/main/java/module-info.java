@@ -28,6 +28,7 @@ module com.apress.cems.sec.practice {
     requires spring.security.config;
     requires spring.security.core;
     requires thymeleaf.extras.springsecurity5;
+    requires kotlin.stdlib;
 
     exports com.apress.cems.sec.config;
     exports com.apress.cems.sec.controllers;

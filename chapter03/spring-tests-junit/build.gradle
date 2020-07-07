@@ -1,5 +1,6 @@
 plugins {
     id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
 }
 
 ext.moduleName = 'com.apress.cems.spring.junit.tests'
@@ -12,6 +13,7 @@ dependencies {
     testCompile testing.junit, spring.test, testing.mockitoAll
     testImplementation spring.test
     testRuntime testing.vintageEngine
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 jar {
@@ -22,5 +24,18 @@ jar {
                 "Implementation-Version": archiveVersion,
                 "Class-Path": configurations.compile.collect { it.getName() }.join(' ')
         )
+    }
+}
+repositories {
+    mavenCentral()
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }

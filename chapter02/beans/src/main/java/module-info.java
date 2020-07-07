@@ -10,4 +10,5 @@ module com.apress.cems.beans {
     requires spring.context;
     requires spring.beans;
     requires spring.core;
+    requires kotlin.stdlib;
 }

@@ -27,6 +27,7 @@ module com.apress.cems.classic.rest.sec {
     requires spring.security.web;
     requires spring.security.core;
     requires spring.security.config;
+    requires kotlin.stdlib;
 
     exports com.apress.cems.rest.sec.config;
     exports com.apress.cems.rest.sec.controllers;

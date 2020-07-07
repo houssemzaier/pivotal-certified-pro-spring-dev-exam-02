@@ -26,6 +26,7 @@ module com.apress.cems.web.views {
     requires java.validation;
     requires poi;
     requires itextpdf;
+    requires kotlin.stdlib;
 
     exports com.apress.cems.web.config;
     exports com.apress.cems.web.controllers;

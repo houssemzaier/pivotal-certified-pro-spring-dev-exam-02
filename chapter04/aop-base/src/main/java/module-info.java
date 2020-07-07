@@ -6,6 +6,7 @@ module com.apress.cems.spring.tests.junit {
     requires com.apress.cems.repos;
     requires org.apache.commons.lang3;
     requires java.sql;
+    requires kotlin.stdlib;
 /*
     requires spring.context;
     requires spring.beans;

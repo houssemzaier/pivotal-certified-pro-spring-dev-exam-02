@@ -12,4 +12,5 @@ module com.apress.cems.aop.xml {
     requires spring.core;
     requires org.aspectj.weaver;
     requires org.slf4j;
+    requires kotlin.stdlib;
 }

@@ -11,4 +11,5 @@ module com.apress.cems.mongo {
     requires java.annotation;
     requires spring.data.commons;
     requires spring.data.mongodb;
+    requires kotlin.stdlib;
 }

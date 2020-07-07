@@ -16,4 +16,5 @@ module com.apress.cems.config {
 
     requires com.apress.cems.pojos;
     requires ojdbc8;
+    requires kotlin.stdlib;
 }

@@ -15,4 +15,5 @@ module com.apress.cems.config.practice {
     requires java.annotation;
 
     requires com.apress.cems.pojos;
+    requires kotlin.stdlib;
 }

@@ -10,6 +10,7 @@ module com.apress.cems.repos {
     requires spring.tx;  // needed only for testing @Transactional on repo
     requires java.sql;
     requires org.apache.commons.lang3;
+    requires kotlin.stdlib;
 
     exports com.apress.cems.repos;
     exports com.apress.cems.repos.util;

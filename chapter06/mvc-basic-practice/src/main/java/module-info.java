@@ -20,6 +20,7 @@ module com.apress.cems.web {
     requires com.zaxxer.hikari;
     requires spring.beans;
     requires java.sql;
+    requires kotlin.stdlib;
 
     exports com.apress.cems.web.config;
     exports com.apress.cems.web.controllers;
